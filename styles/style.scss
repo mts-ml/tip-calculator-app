@@ -157,15 +157,17 @@ div.info {
 }
 
 div.tip {
+   position: relative;
    background-color: $Very-dark-cyan;
    border-radius: 10px;
    height: 260px;
 
-   div.amount-total, div.price {
+   div.amount-total,
+   div.price {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 30px 20px 20px;
+      padding: 30px 20px 0px;
 
       div.detail {
 
@@ -174,19 +176,20 @@ div.tip {
          }
 
          span {
-            font-size: .85rem;
+            font-size: .80rem;
             color: rgba(255, 255, 255, .5);
          }
       }
 
       p.value {
          color: $Strong-cyan;
-         font-size: 1.5rem;
+         font-size: 1.8rem;
          font-weight: bold;
       }
    }
 
    button {
+      position: absolute;
       display: block;
       margin: auto;
       border: none;
@@ -197,11 +200,39 @@ div.tip {
       width: 85%;
       font-weight: bold;
       font-size: 1.2rem;
-      margin: 5px 20px;
+      margin: 0px 20px;
+      bottom: 20px;
    }
 
    button:hover {
       background-color: $Light-grayish-cyan;
       cursor: pointer;
+   }
+}
+
+
+@media screen and (min-width: 600px) {
+   main {
+      width: 580px;
+   }
+
+   div.info {
+
+      h3 {
+         font-size: 1rem;
+      }
+
+      ul {
+
+         li {
+            width: 162px;
+         }
+      }
+   }
+
+   div.tip {
+      button {
+         width: 92%;
+      }
    }
 }

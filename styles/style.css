@@ -132,29 +132,35 @@ div.info ul li#custom input:focus {
 }
 
 div.tip {
+  position: relative;
   background-color: hsl(183, 100%, 15%);
   border-radius: 10px;
   height: 260px;
 }
-div.tip div.amount-total, div.tip div.price {
+div.tip div.amount-total,
+div.tip div.price {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 20px 20px;
+  padding: 30px 20px 0px;
 }
-div.tip div.amount-total div.detail p, div.tip div.price div.detail p {
+div.tip div.amount-total div.detail p,
+div.tip div.price div.detail p {
   color: hsl(0, 0%, 100%);
 }
-div.tip div.amount-total div.detail span, div.tip div.price div.detail span {
-  font-size: 0.85rem;
+div.tip div.amount-total div.detail span,
+div.tip div.price div.detail span {
+  font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.5);
 }
-div.tip div.amount-total p.value, div.tip div.price p.value {
+div.tip div.amount-total p.value,
+div.tip div.price p.value {
   color: hsl(172, 67%, 45%);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 div.tip button {
+  position: absolute;
   display: block;
   margin: auto;
   border: none;
@@ -165,11 +171,27 @@ div.tip button {
   width: 85%;
   font-weight: bold;
   font-size: 1.2rem;
-  margin: 5px 20px;
+  margin: 0px 20px;
+  bottom: 20px;
 }
 div.tip button:hover {
   background-color: hsl(185, 41%, 84%);
   cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    width: 580px;
+  }
+  div.info h3 {
+    font-size: 1rem;
+  }
+  div.info ul li {
+    width: 162px;
+  }
+  div.tip button {
+    width: 92%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
