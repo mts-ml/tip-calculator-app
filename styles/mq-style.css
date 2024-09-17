@@ -1,3 +1,44 @@
+main {
+  width: 950px;
+}
+main header {
+  padding-bottom: 80px;
+}
 
+section#content {
+  display: flex;
+}
+
+div.info {
+  width: 50%;
+}
+div.info h3 {
+  font-size: 1rem;
+}
+div.info ul li {
+  width: 130px;
+}
+
+div.tip {
+  position: relative;
+  margin-left: 40px;
+  width: 50%;
+  height: 370px;
+}
+div.tip div.amount-total, div.tip div.price {
+  padding: 40px 40px 0px;
+}
+div.tip div.amount-total p.value, div.tip div.price p.value {
+  font-size: 2.3rem;
+}
+div.tip div.price {
+  padding-top: 20px;
+}
+div.tip button {
+  position: absolute;
+  margin-left: 35px;
+  width: 83%;
+  bottom: 33px;
+}
 
 /*# sourceMappingURL=mq-style.css.map */

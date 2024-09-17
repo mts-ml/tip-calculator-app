@@ -44,6 +44,7 @@ header {
    h1 {
       color: $Dark-grayish-cyan;
       text-align: center;
+      font-size: 1.5rem;
    }
 }
 
@@ -110,7 +111,7 @@ div.info {
 
       li {
          width: 112px;
-         border-radius: 10px;
+         border-radius: 5px;
          font-size: 1.3rem;
          padding: 10px;
          background-color: $Very-dark-cyan;

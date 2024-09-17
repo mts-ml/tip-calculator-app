@@ -1,0 +1,52 @@
+main {
+   width: 950px;
+
+   header {
+      padding-bottom: 80px;
+   }
+}
+
+section#content {
+   display: flex;
+}
+
+div.info {
+   width: 50%;
+
+   h3 {
+      font-size: 1rem;
+   }
+
+   ul {
+
+      li {
+         width: 130px;
+      }
+   }
+}
+
+div.tip {
+   position: relative;
+   margin-left: 40px;
+   width: 50%;
+   height: 370px;
+
+   div.amount-total, div.price {
+      padding: 40px 40px 0px;
+
+      p.value {
+         font-size: 2.3rem;
+      }
+   }
+
+   div.price {
+      padding-top: 20px;
+   }
+
+   button {
+      position: absolute;
+      margin-left: 35px;
+      width: 83%;
+      bottom: 33px;
+   }
+}
