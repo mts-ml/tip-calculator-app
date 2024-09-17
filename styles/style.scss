@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+$Strong-cyan: hsl(172, 67%, 45%);
+
+$Very-dark-cyan: hsl(183, 100%, 15%);
+$Dark-grayish-cyan: hsl(186, 14%, 43%);
+$Grayish-cyan: hsl(184, 14%, 56%);
+$Light-grayish-cyan: hsl(185, 41%, 84%);
+$Very-light-grayish-cyan: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+
+body,
+input,
+textarea,
+button,
+select {
+   font-family: "Space Mono", monospace;
+}
+
+body {
+   background-color: $Light-grayish-cyan;
+
+   display: grid;
+   place-items: center;
+   min-height: 100vh;
+}
+
+main {
+   background-color: $White;
+   width: 300px;
+   background-color: $Light-grayish-cyan;
+}
+
+header {
+   padding-bottom: 30px;
+
+   h1 {
+      color: $Dark-grayish-cyan;
+      text-align: center;
+   }
+}
+
+section#content {
+   background-color: $White;
+   border-radius: 10px;
+   padding: 30px;
+}
+
+div.info {
+
+   h2 {
+      font-size: 1rem;
+      color: $Dark-grayish-cyan;
+   }
+
+   div.bill-price,
+   div.people {
+      background-color: $Very-light-grayish-cyan;
+      margin: 5px 0 30px 0;
+      position: relative;
+
+      img {
+         position: absolute;
+         z-index: 1;
+         bottom: 10px;
+         padding-left: 20px;
+      }
+
+      input {
+         width: 100%;
+         border-radius: 10px;
+         background-color: $Very-light-grayish-cyan;
+         border: none;
+         height: 30px;
+         color: $Very-dark-cyan;
+         text-align: right;
+         padding: 20px;
+         font-size: 1.5rem;
+         font-weight: bold;
+         cursor: pointer;
+      }
+
+      input:focus {
+         cursor: auto;
+         outline: none;
+         border: 2px solid $Strong-cyan;
+      }
+   }
+
+   h3 {
+      color: $Dark-grayish-cyan;
+      font-size: .8rem;
+   }
+
+   ul {
+      color: $White;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 1rem;
+      margin: 10px 0 30px 0;
+      text-align: center;
+      list-style: none;
+
+      li {
+         width: 112px;
+         border-radius: 10px;
+         font-size: 1.3rem;
+         padding: 10px;
+         background-color: $Very-dark-cyan;
+         overflow: hidden;
+      }
+
+      li:hover {
+         cursor: pointer;
+         font-weight: bold;
+         background-color: $Strong-cyan;
+         color: $Very-dark-cyan;
+      }
+
+      li#custom {
+         padding: 0;
+
+         input {
+            border: none;
+            background-color: $Very-light-grayish-cyan;
+            border: none;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: $Dark-grayish-cyan;
+         }
+
+         input:hover {
+            cursor: pointer;
+         }
+
+         input:focus {
+            padding-right: 10px;
+            text-align: right;
+            border: 2px solid $Strong-cyan;
+            border-radius: 10px;
+            outline: none;
+            cursor: auto;
+         }
+      }
+   }
+}
+
+div.tip {
+   background-color: $Very-dark-cyan;
+   border-radius: 10px;
+   height: 260px;
+
+   div.amount-total, div.price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 20px 20px;
+
+      div.detail {
+
+         p {
+            color: $White;
+         }
+
+         span {
+            font-size: .85rem;
+            color: rgba(255, 255, 255, .5);
+         }
+      }
+
+      p.value {
+         color: $Strong-cyan;
+         font-size: 1.5rem;
+         font-weight: bold;
+      }
+   }
+
+   button {
+      display: block;
+      margin: auto;
+      border: none;
+      background-color: $Strong-cyan;
+      border-radius: 5px;
+      color: $Very-dark-cyan;
+      height: 40px;
+      width: 85%;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 5px 20px;
+   }
+
+   button:hover {
+      background-color: $Light-grayish-cyan;
+      cursor: pointer;
+   }
+}

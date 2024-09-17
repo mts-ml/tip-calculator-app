@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea,
+button,
+select {
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  width: 300px;
+  background-color: hsl(185, 41%, 84%);
+}
+
+header {
+  padding-bottom: 30px;
+}
+header h1 {
+  color: hsl(186, 14%, 43%);
+  text-align: center;
+}
+
+section#content {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+div.info h2 {
+  font-size: 1rem;
+  color: hsl(186, 14%, 43%);
+}
+div.info div.bill-price,
+div.info div.people {
+  background-color: hsl(189, 41%, 97%);
+  margin: 5px 0 30px 0;
+  position: relative;
+}
+div.info div.bill-price img,
+div.info div.people img {
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  padding-left: 20px;
+}
+div.info div.bill-price input,
+div.info div.people input {
+  width: 100%;
+  border-radius: 10px;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  height: 30px;
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+div.info div.bill-price input:focus,
+div.info div.people input:focus {
+  cursor: auto;
+  outline: none;
+  border: 2px solid hsl(172, 67%, 45%);
+}
+div.info h3 {
+  color: hsl(186, 14%, 43%);
+  font-size: 0.8rem;
+}
+div.info ul {
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  margin: 10px 0 30px 0;
+  text-align: center;
+  list-style: none;
+}
+div.info ul li {
+  width: 112px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  padding: 10px;
+  background-color: hsl(183, 100%, 15%);
+  overflow: hidden;
+}
+div.info ul li:hover {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+div.info ul li#custom {
+  padding: 0;
+}
+div.info ul li#custom input {
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: hsl(186, 14%, 43%);
+}
+div.info ul li#custom input:hover {
+  cursor: pointer;
+}
+div.info ul li#custom input:focus {
+  padding-right: 10px;
+  text-align: right;
+  border: 2px solid hsl(172, 67%, 45%);
+  border-radius: 10px;
+  outline: none;
+  cursor: auto;
+}
+
+div.tip {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  height: 260px;
+}
+div.tip div.amount-total, div.tip div.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px 20px;
+}
+div.tip div.amount-total div.detail p, div.tip div.price div.detail p {
+  color: hsl(0, 0%, 100%);
+}
+div.tip div.amount-total div.detail span, div.tip div.price div.detail span {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+div.tip div.amount-total p.value, div.tip div.price p.value {
+  color: hsl(172, 67%, 45%);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+div.tip button {
+  display: block;
+  margin: auto;
+  border: none;
+  background-color: hsl(172, 67%, 45%);
+  border-radius: 5px;
+  color: hsl(183, 100%, 15%);
+  height: 40px;
+  width: 85%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 5px 20px;
+}
+div.tip button:hover {
+  background-color: hsl(185, 41%, 84%);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Tip calculator app</title>
+
+  <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="stylesheet" href="styles/mq-style.css" media="(min-width:992px)">
+
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>
+        S P L I<br>
+        T T E R
+      </h1>
+    </header>
+
+    <section id="content">
+      <div class="info">
+        <h2>Bill</h2>
+
+        <div class="bill-price">
+          <img src="./images/icon-dollar.svg" alt="Icon of a dollar">
+
+          <input type="text" id="bill" value="142.55" min="1">
+        </div>
+
+        <h3>Select Tip %</h3>
+        <ul>
+          <li>5%</li>
+          <li>10%</li>
+          <li>15%</li>
+          <li>25%</li>
+          <li>50%</li>
+          <li id="custom">
+            <input type="text"                     
+            value="Custom">
+          </li>
+        </ul>
+
+        <h3>Number of People</h3>
+
+        <div class="people">
+          <img src="./images/icon-person.svg" alt="Icon of a person">
+
+          <input type="text" id="inputPeople" value="5" min="1">
+        </div>
+      </div>
+
+      <div class="tip">
+        <div class="amount-total">
+          <div class="detail">
+            <p>Tip Amount</p>
+            <span>/ person</span>
+          </div>
+
+          <p class="value">$4.27</p>
+        </div>
+
+        <div class="price">
+          <div class="detail">
+            <p>Total</p>
+            <span>/ person</span>
+          </div>
+
+            <p class="value">$32.79</p>
+        </div>
+
+        <button type="submit">RESET</button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

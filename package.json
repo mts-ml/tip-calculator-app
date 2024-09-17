@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "sass": "^1.78.0"
+  },
+  "scripts": {
+    "sass": "sass styles/style.scss:styles/style.css styles/mq-style.scss:styles/mq-style.css"
+  }
+}
