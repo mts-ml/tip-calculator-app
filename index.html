@@ -24,7 +24,7 @@
         T T E R
       </h1>
     </header>
-    
+
     <section id="content">
       <div class="info">
         <h2>Bill</h2>
@@ -43,17 +43,19 @@
           <li>25%</li>
           <li>50%</li>
           <li id="custom">
-            <input type="text"                     
-            value="Custom">
+            <input type="text" value="Custom">
           </li>
         </ul>
 
-        <h3>Number of People</h3>
+        <div class="error-message">
+          <h3>Number of People</h3>
+          <span id="error"></span>
+        </div>
 
         <div class="people">
           <img src="./images/icon-person.svg" alt="Icon of a person">
 
-          <input type="text" id="inputPeople" value="5" min="1">
+          <input type="text" id="inputPeople" value="5">
         </div>
       </div>
 
@@ -73,7 +75,7 @@
             <span>/ person</span>
           </div>
 
-            <p class="value">$32.79</p>
+          <p class="value">$32.79</p>
         </div>
 
         <button type="submit">RESET</button>
