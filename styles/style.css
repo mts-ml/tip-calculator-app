@@ -78,9 +78,32 @@ div.info div.people input:focus {
   outline: none;
   border: 2px solid hsl(172, 67%, 45%);
 }
-div.info h3 {
+div.info div.bill-price .span-error,
+div.info div.people .span-error {
+  outline: none;
+  border: 2px solid rgb(196, 129, 4);
+  border-radius: 10px;
+}
+div.info div.bill-price input:focus.span-error,
+div.info div.people input:focus.span-error {
+  outline: none;
+  border: 2px solid rgb(196, 129, 4);
+  border-radius: 10px;
+}
+div.info div.error-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.info div.error-message h3 {
   color: hsl(186, 14%, 43%);
   font-size: 0.8rem;
+}
+div.info div.error-message span#error {
+  text-align: right;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgb(196, 129, 4);
 }
 div.info ul {
   color: hsl(0, 0%, 100%);
@@ -129,6 +152,11 @@ div.info ul li#custom input:focus {
   border-radius: 10px;
   outline: none;
   cursor: auto;
+}
+div.info ul li#custom .input-custom {
+  background-color: #FFCDD2;
+  outline: none;
+  border: 2px solid #EF5350;
 }
 
 div.tip {
