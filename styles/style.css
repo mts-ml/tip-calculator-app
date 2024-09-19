@@ -156,6 +156,8 @@ div.info ul li#custom input:focus {
 div.info ul li#custom .input-custom {
   background-color: #FFCDD2;
   outline: none;
+}
+div.info ul li#custom .input-custom:focus {
   border: 2px solid #EF5350;
 }
 

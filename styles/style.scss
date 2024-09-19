@@ -177,10 +177,11 @@ div.info {
             cursor: auto;
          }
 
-         // ARRUMAR AQUI
          .input-custom {
             background-color: #FFCDD2;
             outline: none;
+         }
+         .input-custom:focus {
             border: 2px solid #EF5350;
          }
       }
