@@ -12,17 +12,7 @@ const totalPerson = document.querySelector('div.price p.value')
 
 const resetButton = document.querySelector('div.tip button')
 
-let selectedTipPercentage = 15
-
-// Function to set initial % 15
-function setInitialPercentage() {
-   tipsPercentage.forEach(li => {
-      if (Number(li.textContent.replace('%', '')) === 15) {
-         li.classList.add('active')
-      }
-   })
-   updateDisplay()
-}
+let selectedTipPercentage = 0
 
 
 function handleBillValue() {
@@ -142,5 +132,3 @@ resetButton.addEventListener('click', resetValues);
 
 inputBill.addEventListener('input', updateDisplay)
 numberOfPeople.addEventListener('input', updateDisplay)
-
-setInitialPercentage()
