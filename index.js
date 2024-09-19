@@ -21,7 +21,6 @@ function handleBillValue() {
 
       if (billValue <= 0) {
          inputBill.classList.add('input-custom')
-         console.log(billValue)
          totalPerson.textContent = `$0.00`
          tipAmount.textContent = "$0.00"
       } else {
@@ -51,6 +50,10 @@ tipsCustom.addEventListener('focus', () => {
    removeActiveClass()
 })
 
+// Remove the active class list from percentages buttons
+const removeActiveClass = () => {
+   tipsPercentage.forEach(li => li.classList.remove('active'))
+}
 
 tipsPercentage.forEach((liPercentage) => {
    // Select the other percentages
@@ -66,11 +69,6 @@ tipsPercentage.forEach((liPercentage) => {
       updateDisplay()
    })
 })
-
-// Remove the active class list from percentages buttons
-const removeActiveClass = () => {
-   tipsPercentage.forEach(li => li.classList.remove('active'))
-}
 
 
 function ErrorMessage(showError) {
