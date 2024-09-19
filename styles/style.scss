@@ -87,6 +87,14 @@ div.info {
          cursor: pointer;
       }
 
+      .input-custom {
+         background-color: #FFCDD2;
+         outline: none;
+      }
+      .input-custom:focus {
+         border: 2px solid #EF5350;
+      }
+
       input:focus {
          cursor: auto;
          outline: none;
@@ -140,6 +148,12 @@ div.info {
          padding: 10px;
          background-color: $Very-dark-cyan;
          overflow: hidden;
+      }
+
+      .active {
+         background-color: $Strong-cyan;
+         color: $Very-dark-cyan;
+         font-weight: bold;
       }
 
       li:hover {

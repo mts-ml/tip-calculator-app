@@ -72,6 +72,15 @@ div.info div.people input {
   font-weight: bold;
   cursor: pointer;
 }
+div.info div.bill-price .input-custom,
+div.info div.people .input-custom {
+  background-color: #FFCDD2;
+  outline: none;
+}
+div.info div.bill-price .input-custom:focus,
+div.info div.people .input-custom:focus {
+  border: 2px solid #EF5350;
+}
 div.info div.bill-price input:focus,
 div.info div.people input:focus {
   cursor: auto;
@@ -121,6 +130,11 @@ div.info ul li {
   padding: 10px;
   background-color: hsl(183, 100%, 15%);
   overflow: hidden;
+}
+div.info ul .active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-weight: bold;
 }
 div.info ul li:hover {
   cursor: pointer;
