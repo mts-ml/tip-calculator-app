@@ -55,7 +55,8 @@ section#content {
 
 div.info {
 
-   h2 {
+   label#label-bill {
+      font-weight: bold;
       font-size: 1rem;
       color: $Dark-grayish-cyan;
    }
@@ -91,6 +92,7 @@ div.info {
          background-color: #FFCDD2;
          outline: none;
       }
+
       .input-custom:focus {
          border: 2px solid #EF5350;
       }
@@ -119,9 +121,10 @@ div.info {
       justify-content: space-between;
       align-items: center;
 
-      h3 {
-         color: $Dark-grayish-cyan;
+      label#labelPeople {
+         font-weight: bold;
          font-size: .8rem;
+         color: $Dark-grayish-cyan;
       }
 
       span#error {
@@ -130,6 +133,12 @@ div.info {
          font-weight: bold;
          color: rgb(196, 129, 4);
       }
+   }
+
+   label#custom-tip {
+      color: $Dark-grayish-cyan;
+      font-size: .8rem;
+      font-weight: bold;
    }
 
    ul {
@@ -195,6 +204,7 @@ div.info {
             background-color: #FFCDD2;
             outline: none;
          }
+
          .input-custom:focus {
             border: 2px solid #EF5350;
          }

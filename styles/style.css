@@ -41,7 +41,8 @@ section#content {
   padding: 30px;
 }
 
-div.info h2 {
+div.info label#label-bill {
+  font-weight: bold;
   font-size: 1rem;
   color: hsl(186, 14%, 43%);
 }
@@ -104,15 +105,21 @@ div.info div.error-message {
   justify-content: space-between;
   align-items: center;
 }
-div.info div.error-message h3 {
-  color: hsl(186, 14%, 43%);
+div.info div.error-message label#labelPeople {
+  font-weight: bold;
   font-size: 0.8rem;
+  color: hsl(186, 14%, 43%);
 }
 div.info div.error-message span#error {
   text-align: right;
   font-size: 0.7rem;
   font-weight: bold;
   color: rgb(196, 129, 4);
+}
+div.info label#custom-tip {
+  color: hsl(186, 14%, 43%);
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 div.info ul {
   color: hsl(0, 0%, 100%);
