@@ -27,7 +27,8 @@
 
     <section id="content">
       <div class="info">
-        <h2>Bill</h2>
+        
+        <label id="label-bill" for="bill">Bill</label>
 
         <div class="bill-price">
           <img src="./images/icon-dollar.svg" alt="Icon of a dollar">
@@ -36,7 +37,7 @@
           value="142.55" min="1">
         </div>
 
-        <h3>Select Tip %</h3>
+        <label for="custom-tip" id="custom-tip">Select Tip %</label>
         <ul>
           <li>5%</li>
           <li>10%</li>
@@ -44,12 +45,15 @@
           <li>25%</li>
           <li>50%</li>
           <li id="custom">
-            <input type="text" placeholder="Custom">
+            <input type="text" id="custom-tip" placeholder="Custom">
           </li>
         </ul>
 
         <div class="error-message">
-          <h3>Number of People</h3>
+          <label for="inputPeople" id="labelPeople">
+            Number of People
+          </label>
+
           <span id="error"></span>
         </div>
 

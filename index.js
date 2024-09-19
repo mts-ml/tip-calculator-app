@@ -2,7 +2,7 @@ const inputBill = document.getElementById('bill')
 
 const tipsPercentage = document.querySelectorAll('ul > li')
 
-const tipsCustom = document.querySelector('li#custom > input')
+const tipsCustom = document.querySelector('input#custom-tip')
 
 const numberOfPeople = document.getElementById('inputPeople')
 
