@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- [GitHub Pages](https://mts-ml.github.io/development/tip-calculator-app/index.html)
+- [Preview Site](https://mts-ml.github.io/tip-calculator-app/)
 
 
 ### Built with
